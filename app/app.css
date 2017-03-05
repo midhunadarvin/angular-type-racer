@@ -23,3 +23,24 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+.type-text {
+	word-wrap: break-word;
+}
+
+.pointer
+{
+    border-bottom:2px solid  tomato;
+}
+
+.match
+{
+    background:#E1FF3E ;
+    background:rgba(206,255,69,0.5);
+}
+
+.nomatch
+{
+    background-color:red;
+    background:rgba(255,128,62,0.5);
+}

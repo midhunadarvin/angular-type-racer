@@ -1,1 +1,22 @@
-<p>This is the partial for view 1.</p>
+<div class="container" ng-controller="HomeController as vm">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="col-lg-offset-2 col-lg-10 well well-lg">
+				<div class="type-text">
+			    	<span class="word" ng-repeat="l in vm.paragraph track by $index" ng-class="{pointer: vm.currentPosition===$index, match: l.status=='1', nomatch: l.status=='2'}" >{{l.word }}&nbsp;</span>
+			    </div>
+			</div>
+		</div>
+		<div class="col-md-10 col-md-offset-1">
+			<form class="form-horizontal">
+				<div class="form-group">
+			      <label for="textArea" class="col-lg-2 control-label">Type Here:</label>
+			      <div class="col-lg-10">
+			        <textarea class="form-control" rows="3" id="textArea" ng-model="vm.enteredData" ng-list=" " ng-trim="false" ng-keyup="vm.changeStatus()"></textarea>
+			        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+			      </div>
+			    </div>
+			</form>
+		</div>
+	</div>
+</div>
