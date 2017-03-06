@@ -30,17 +30,38 @@
 
 .pointer
 {
-    border-bottom:2px solid  tomato;
+    border-bottom:2px solid #3bff41;
 }
 
 .match
-{
-    background:#E1FF3E ;
-    background:rgba(206,255,69,0.5);
+{	
+	color: #3bff41;
+    // background:#E1FF3E ;
+    // background:rgba(206,255,69,0.5);
 }
 
 .nomatch
 {
-    background-color:red;
-    background:rgba(255,128,62,0.5);
+    color: #ff2009;
+    // background-color:red;
+    // background:rgba(255,128,62,0.5);
+}
+
+.pointer.nomatch {
+	border-bottom:2px solid #ff2009;
+}
+
+.well{
+	color: #FFF;
+	background-color: #2c3e50;
+}
+
+.car-container {
+	outline: 5px solid #2C3E50;
+	margin-bottom: 15px;
+}
+
+.timer {
+	height: 100%;
+    font-size: 36px;
 }

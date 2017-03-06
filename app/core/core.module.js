@@ -4,6 +4,7 @@
     angular
         .module('myApp.core', [
         	'ngRoute',
-        	'ngResource'
+        	'ngResource',
+        	'timer'
         ]);
 })();
