@@ -9,7 +9,7 @@
 
     /* @ngInject */
     function DataService($resource) {
-        var url= 'http://www.randomtext.me/api/gibberish/p-1/25';
+        var url= 'https://www.randomtext.me/api/gibberish/p-1/25';
         var randomTextResourceObj = $resource(url);
         this.getRandomText = getRandomText;
 
