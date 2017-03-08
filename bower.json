@@ -19,6 +19,7 @@
     "alertifyjs": "^1.0.11"
   },
   "resolutions": {
-    "angular": "1.6.0"
+    "angular": "1.6.0",
+    "humanize-duration": "3.10.0"
   }
 }
