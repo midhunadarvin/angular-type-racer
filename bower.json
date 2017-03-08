@@ -17,5 +17,8 @@
     "moment": "momentjs#^2.17.1",
     "humanize-duration": "^3.10.0",
     "alertifyjs": "^1.0.11"
+  },
+  "resolutions": {
+    "angular": "1.6.2"
   }
 }
