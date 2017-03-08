@@ -1,3 +1,16 @@
+<script type="text/ng-template" id="myModalContent.html">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+   
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+    </div>
+</script>
+
 <div class="container" ng-controller="HomeController as vm">
 	<div class="row">
 		<div class=" col-md-10 col-md-offset-1">
@@ -5,7 +18,7 @@
 				<img ng-style="vm.carStyle" src="../assets/icons/car.png" height="100px">
 			</div>
 			<div ng-if="vm.grossWPM" class="result col-lg-offset-2 col-lg-10">
-				<h2>Your Typing speed is {{vm.grossWPM}} WPM. Click the Reset Button to try again.</h2>
+				<h3>Your Typing speed is {{vm.grossWPM}} WPM. Click the Reset Button to try again.</h3>
 			</div>
 		</div>
 	</div>

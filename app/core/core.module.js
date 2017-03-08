@@ -5,6 +5,7 @@
         .module('myApp.core', [
         	'ngRoute',
         	'ngResource',
-        	'timer'
+        	'timer',
+        	'Alertify'
         ]);
 })();
