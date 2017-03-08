@@ -35,8 +35,7 @@
     "update-deps": "npm update",
     "postupdate-deps": "bower update",
 
-    "prestart": "npm install",
-    "start": "http-server -a 192.168.5.96 -p 8000 -c-1 ./app",
+    "start": "http-server ./app",
 
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
