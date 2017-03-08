@@ -21,6 +21,6 @@
   "resolutions": {
     "angular": "1.6.0",
     "humanize-duration": "3.10.0",
-    "moment": "momentjs#2.17.1"
+    "moment": "2.17.1"
   }
 }
