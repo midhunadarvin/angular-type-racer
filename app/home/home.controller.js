@@ -5,10 +5,10 @@
         .module('myApp.home')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['DataService', '$timeout', 'Alertify'];
+    HomeController.$inject = ['DataService', '$timeout', 'alertify'];
 
     /* @ngInject */
-    function HomeController(DataService, $timeout, Alertify) {
+    function HomeController(DataService, $timeout, alertify) {
         var vm = this;
         vm.changeStatus = changeStatus;
         vm.startTimer = startTimer;
@@ -135,6 +135,7 @@
 
         // Start the Timer and Focus to the input element
         function startTimer(){
+            
             vm.startTime = new Date();
             angular.element('timer')[0].start();
             $timeout(function(){
@@ -167,8 +168,8 @@
             vm.grossWPM = Math.round(grossWPM * 100) / 100; 
             var message = "Congratulations : Your typing speed is "+vm.grossWPM;    
             //alert("Congratulations : Your typing speed is "+vm.grossWPM);
-            console.log(Alertify)
-            Alertify.alert('This is an alert');
+          
+            alertify.alert(message);
         }
 
         // Check if the element has white space

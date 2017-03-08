@@ -6,6 +6,6 @@
         	'ngRoute',
         	'ngResource',
         	'timer',
-        	'Alertify'
+        	'ngAlertify'
         ]);
 })();
